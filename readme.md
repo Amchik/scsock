@@ -40,7 +40,7 @@ $ scsock -c path/to/config.toml list
 Here is a table of messages, that can be sent or received:
 
 | Name        | Bytes             | Description                                         |
------------------------------------------------------------------------------------------
+|-------------|-------------------|-----------------------------------------------------|
 | `GetStatus` | `[0]`             | Gets the current status. Returns `ReStatus`         |
 | `SetStatus` | `[1, ID]`         | Sets state to ID. Returns `ReStatus` on success     |
 | `NextID`    | `[2]`             | Go to next status ID. Returns `ReStatus` on success |
