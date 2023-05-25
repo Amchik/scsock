@@ -1,0 +1,16 @@
+[package]
+name = "scsock"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+strip = true
+panic = 'abort'
+
+[dependencies]
+serde = { version = "1", features = [ "derive" ] }
+toml = { version = "0.7", features = [ "preserve_order" ] }
+clap = { version = "4", features = [ "derive" ] }
+indexmap = { version = "1.9", features = [ "serde" ] }
+
